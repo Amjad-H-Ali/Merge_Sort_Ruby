@@ -1,10 +1,10 @@
 p 'Merge Sort!'
 
 def merge_sort array
-	array.length
+	middle = array.length/2.to_i
 end
 
-arr = [1, 29, 67, 4, 3, 3, 0, 1, 9]
+arr = [1, 29, 67, 4, 3, 3, 0, 1, 9, 10]
 
-p merge_sort arr
+merge_sort arr
 
