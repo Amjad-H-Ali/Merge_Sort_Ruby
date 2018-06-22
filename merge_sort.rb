@@ -2,19 +2,21 @@ p 'Merge Sort!'
 
 def merge_sort array
 	len = array.length
-	p len
-	middle = array.length/2.to_i
+	if len < 2
+		return array
+	end
+		
+	middle = len/2.to_i
 
 	left = array[0..middle - 1]
 
-	right = array[middle..array.length]
+	right = array[middle..len]
 
-	p left 
-	p right
+
 
 end
 
-arr = [1, 29, 67, 4, 7, 3, 0, 1, 9]
+arr = [1]
 
-merge_sort arr
+p merge_sort arr
 
